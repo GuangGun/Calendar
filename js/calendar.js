@@ -84,11 +84,12 @@
 		link:function(){
 			if(bOk)return;
 			bOk=true;
+			this.obj.focus();
 			var oLink=document.createElement('link');
 			oLink.rel='stylesheet';
-			oLink.href='calendar.css';
+			oLink.href='css/calendar.css';
 			oLink.type='text/css';
-			document.documentElement.children[0].appendChild(oLink);	
+			document.documentElement.children[0].appendChild(oLink);		
 		},
 		prev:function(){
 			var _this=this;
