@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;	
+}
+.box{
+	width:224px;
+	border:2px solid blue;
+	background:linear-gradient(#666,#666,#CCC,#999);
+	overflow:hidden;
+	box-shadow:10px 10px 5px #888;
+	text-align:center;
+	font-size:16px;
+	display:none;
+	position:absolute;	
+}
+.box h2{
+	line-height:30px;
+	font-size:20px;
+	border-bottom:2px solid blue;
+	color:gold;
+	text-shadow:0px 10px 20px #FF6;	
+}
+li{
+	width:32px;
+	height:30px;
+	text-align:center;
+	line-height:30px;	
+	list-style:none;
+	cursor:pointer;
+	float:left;
+}
+.tick{
+	line-height:30px;
+	font-size:18px;
+	border-bottom:2px solid blue;
+	color:#333;
+	height:30px;
+	font-weight:bold;
+	text-shadow:0px 10px 20px #fff;	
+	letter-spacing:3px;	
+}
+ol li{
+	font-weight:bold;
+	text-shadow:0px 10px 20px #FF6;
+	color:gold;	
+}
+ul li{
+	text-shadow:0px 5px 10px blue;
+	border-radius:50%;
+	transition:all ease .2s;
+	color:#30F;	
+}
+.box ol{
+	border-bottom:2px solid blue;
+	width:100%;
+	height:30px;		
+}
+.box ol,.box ul{	
+	overflow:hidden;
+	zoom:1;
+}
+.week{
+	color:red;
+	text-shadow:0px 5px 10px red;	
+}
+.today{
+	font-weight:bold;
+	text-shadow:0px 5px 10px yellow;
+	-background:radial-gradient(#666,#09F);
+	color:yellow;	
+}
+.pass{
+	color:#ccc;	
+	text-shadow:0px 5px 10px black;
+}
+ul li.hover:hover{
+	background:#06F;
+	color:#fff;
+	box-shadow:0 0 10px #fff;
+	transform:scale(1.2);	
+	
+}
+.box a{
+	position:absolute;
+	line-height:0;
+	text-decoration:none;
+	border:10px solid transparent;
+	transition:all .1s ease;
+}
+.box a.left{
+	left:0px;
+	top:5px;
+	border-right-color:#06F;	
+}
+a.left:hover{
+	border-right-color:#03F;	
+}
+a.left:active{
+	top:6px;
+	border-right-color:#06C;	
+}
+.box a.right{
+	right:0px;
+	top:5px;
+	border-left-color:#06f;	
+}
+a.right:hover{
+	border-left-color:#03F;	
+}
+a.right:active{
+	top:6px;
+	border-left-color:#06C;	
+}
